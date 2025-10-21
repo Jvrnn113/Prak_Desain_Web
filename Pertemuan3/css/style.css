@@ -1,0 +1,80 @@
+/* Font & Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eeedeb;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Judul */
+h1, h2 {
+    color: #ff7043;
+    text-align: center;
+}
+
+/* Form */
+form {
+    background: #fff;
+    border: 2px solid #ff7043;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #ff7043;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #e64a19;
+}
+
+/* BONUS: Styling <meter> */
+meter {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background: #eee;
+}
+meter::-webkit-meter-bar {
+    background: #eee;
+    border-radius: 10px;
+}
+meter::-webkit-meter-optimum-value {
+    background: linear-gradient(90deg, #4caf50, #ffeb3b, #f44336);
+    border-radius: 10px;
+}
+
+/* BONUS: Styling <details> & <summary> */
+details {
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fafafa;
+}
+summary {
+    cursor: pointer;
+    padding: 8px 12px;
+    background: #4caf50;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    list-style: none; /* hilangkan tanda panah default */
+}
+summary:hover {
+    background: #388e3c;
+}
+details[open] summary {
+    background: #2e7d32;
+}
